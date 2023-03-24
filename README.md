@@ -2,9 +2,9 @@
 
 ## *Biplab Bera*
 
-**Bigger Number App**  prompts the user to select which of the two numbers presented is larger. The background color is updated depending on if the correct answer is chosen. New numbers are randomly selected after a user selection.
+**Bigger Number App**  prompts the user to select which of the two numbers presented is larger. The background color is updated depending on if the correct answer is chosen. New numbers are randomly selected after a user selection. If the player guessed the right number score will be incremented by 1 and if the player guessed wrong score will be decreased by 1.
 
-Time spent: **10** hours spent in total
+Time spent: More than **10** hours spent in total
 
 ## Functionality
 
@@ -17,3 +17,5 @@ The following **required** functionality is completed:
 * The following **extensions** are implemented:
 
 * [x] Custom colors selected
+* [x] Score counter added
+* [x] Scores can now be saved 
