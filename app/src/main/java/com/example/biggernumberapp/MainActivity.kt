@@ -1,14 +1,13 @@
 package com.example.biggernumberapp
 
-import android.annotation.SuppressLint
 import android.graphics.Color
 import android.os.Bundle
+import android.preference.PreferenceManager
 import android.widget.Button
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
-
 import java.util.*
 
 
@@ -40,6 +39,7 @@ class MainActivity : AppCompatActivity() {
     }
 
 
+
     private fun assignNumbersToButtons() {
         val r = Random()
         val num1 = r.nextInt(10)
@@ -51,31 +51,45 @@ class MainActivity : AppCompatActivity() {
         rightbutton.text = "$num2"
     }
 
-    @SuppressLint("SetTextI18n")
+
     private fun checkAnswer(isLeftButtonSelected: Boolean) {
         val n1 = leftbutton.text.toString().toInt()
         val n2 = rightbutton.text.toString().toInt()
-        var isAnswerCorrect = if (isLeftButtonSelected) n1 > n2 else n2 > n1
+        val isAnswerCorrect = if (isLeftButtonSelected) n1 > n2 else n2 > n1
         val toastMessage: String
         val backgroundColor: Int
+        val SCORE_KEY = "score"
 
-        var finalscore =  0
+        val sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this /* or context */)
+
 
         if (isAnswerCorrect) {
             toastMessage = "Correct!!"
             backgroundColor = Color.GREEN
+            var score = sharedPreferences.getInt(SCORE_KEY, 0)
 
-            scorecounter.text = "score${finalscore.inc()}"
+            score++
+            sharedPreferences.edit().putInt(SCORE_KEY, score).apply()
+            scorecounter.text = "$score"
+
+
+
         } else {
             toastMessage = "Wrong"
             backgroundColor = Color.RED
-            scorecounter.text = "score:${finalscore.dec()}"
+            var score = sharedPreferences.getInt(SCORE_KEY, 0)
+
+            score--
+            sharedPreferences.edit().putInt(SCORE_KEY, score).apply()
+            scorecounter.text = "$score"
         }
+
 
         Toast.makeText(this, toastMessage, Toast.LENGTH_SHORT).show()
         background.setBackgroundColor(backgroundColor)
 
     }
+
 
 
 }
