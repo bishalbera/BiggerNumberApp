@@ -27,4 +27,4 @@ The following **required** functionality is completed:
 
 Here's a walkthrough  of the app:
 
-(img src="https://gifs.com/gif/video-walkthrough-mq9kOn" title="Video Walkthrough" width=" alt="Video Walkthrough" )
+(img src="https://j.gifs.com/mq9kOn.gif" alt="Video Walkthrough" )
