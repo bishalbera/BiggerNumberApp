@@ -27,4 +27,5 @@ The following **required** functionality is completed:
 
 Here's a walkthrough  of the app:
 
-(img src="https://j.gifs.com/mq9kOn.gif" alt="Video Walkthrough" )
+
+![device-2023-04-01-171438](https://user-images.githubusercontent.com/123734227/229289695-e7830694-35b8-4baf-bb89-cf42ce9079dc.gif)
