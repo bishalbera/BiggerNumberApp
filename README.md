@@ -28,4 +28,5 @@ The following **required** functionality is completed:
 Here's a walkthrough  of the app:
 
 
-![device-2023-04-01-171438](https://user-images.githubusercontent.com/123734227/229289695-e7830694-35b8-4baf-bb89-cf42ce9079dc.gif)
+![device-2023-04-01-171438_AdobeExpress](https://user-images.githubusercontent.com/123734227/229290268-2549a948-0300-4b0e-9001-af53e17353ff.gif)
+
