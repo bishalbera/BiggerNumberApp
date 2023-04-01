@@ -16,6 +16,15 @@ The following **required** functionality is completed:
 
 * The following **extensions** are implemented:
 
+* [x] Three screens added
+* [x] User can enter their name
 * [x] Custom colors selected
 * [x] Score counter added
-* [x] Scores can now be saved 
+ 
+
+
+## Video Walkthrough
+
+Here's a walkthrough  of the app:
+
+<img src='https://j.gifs.com/mq9kOn.gif' title='Video Walkthrough' width=" alt='Video Walkthrough' />

@@ -59,11 +59,11 @@ class GuessNumberActivity : AppCompatActivity() {
         rightButton.text = "$num2"
 
     }
+
     private fun checkAnswer(leftButtonSelected:Boolean) {
         val n1 = leftButton.text.toString().toInt()
         val n2 = rightButton.text.toString().toInt()
         val isAnswerCorrect =  if(leftButtonSelected) n1 > n2 else n2 > n1
-
         val backgroundColor: Int
         val toastMessage: String
         if (isAnswerCorrect) {
